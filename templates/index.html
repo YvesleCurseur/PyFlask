@@ -7,6 +7,12 @@
         <title>Welcome to Flask</title>
     </head>
     <body>
-        Hello, {{ Name }} ! This is  Flask World
+        <!-- Hello, {{ Name }} ! This is  Flask World -->
+        There are some boss in Flask like ...
+        <ul>
+            {% for All in DataEtudiant %}
+                <li>{{ All.nom }}</li>
+            {% endfor %}
+        </ul>
     </body>
 </html>
