@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Boss in Flask</title>
+</head>
+<body>
+    <h3>Create Boss</h3>
+    <form action="/etudiants/create" method="POST">
+        
+        Filiere
+        <select name="filiere_select">
+            {% for All in dataFiliere %}
+            <option value="{{ All.id }}">{{ All.codefiliere }}</option>
+            {% endfor %}
+        </select>
+
+        <label for="">Nom</label>
+        <input type="text" name="nom" placeholder="Saisir Nom">
+        <label for="">Prénom</label>
+        <input type="text" name="prenom" placeholder="Saisir Prénom">
+        <label for="">Email</label>
+        <input type="email" name="email" placeholder="Saisir Email">
+        <label for="">Adresse</label>
+        <input type="text" name="adresse" placeholder="Saisir Adresse">
+        <input type="submit" name="Enregistrer">
+
+    </form>
+<br>
+    <a href="/etudiants">List Boss</a>
+</body>
+</html>

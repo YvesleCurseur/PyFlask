@@ -10,9 +10,10 @@
         <!-- Hello, {{ Name }} ! This is  Flask World -->
         There are some boss in Flask like ...
         <ul>
-            {% for All in DataEtudiant %}
+            {% for All in dataEtudiant %}
                 <li>{{ All.nom }}</li>
             {% endfor %}
         </ul>
+        <a href="/etudiants/create">Add Boss</a>
     </body>
 </html>
